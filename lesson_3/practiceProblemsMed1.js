@@ -37,6 +37,9 @@ change the loop. How can he make this work without using a do/while loop? Note t
 the factors for 0 or negative numbers, but we want to handle it gracefully instead of raising an exception or 
 going into an infinite loop. */
 
+// Answer:
+// Use a while loop instead of the do/while loop.
+
 while (divisor > 0) {
   if (number % divisor === 0) {
     factors.push(number / divisor);   
@@ -68,7 +71,7 @@ function addToRollingBuffer2(buffer, maxBufferSize, newElement) {
 // the push method will mutate the argument while concat will not. 
 
 // Question 5. What will the following two lines of code output?
-console.log(0.3 + 0.6); // This will log a floating point number 
+console.log(0.3 + 0.6); // This will log a floating point number 0.8999999999999999
 console.log(0.3 + 0.6 === 0.9); // This will log => False
 
 // Question 6. What do you think the following code will output?
